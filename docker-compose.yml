@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+    image: pokespeare-backend
+    container_name: pokespeare-backend
+    restart: unless-stopped
+    environment:
+      - ALLOWED_ORIGINS=http://localhost
+    ports:
+      - "3000:3000"
+    networks:
+      - backend
+  frontend:
+    build: 
+      context: ./frontend
+      args:
+        REACT_APP_BACKEND_URL: http://localhost:3000
+    image: pokespeare-frontend
+    container_name: pokespeare-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    networks:
+      - frontend
+
+networks:
+  backend:
+  frontend:
