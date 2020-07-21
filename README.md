@@ -18,7 +18,7 @@ git submodule update --init
 docker-compose up
 ```
 
-Now you can open your browser to [http://localhost](http://localhost).
+Now you can see it on [http://localhost](http://localhost).
 
 ## Notes
 
@@ -29,4 +29,5 @@ Now you can open your browser to [http://localhost](http://localhost).
 
 ## FAQ
 
-- *Why did you use three repositories instead of only one?* Because the CI/CD pipelines are easier to manage having distinct repositories per project.
+- *Why did you use three repositories instead of only one?* Because the CI/CD pipelines are easier to manage.
+- *I'm lazy, do you have a live website that shows this stuff?* Of course! Just go to [https://pokespeare.mattianatali.dev/](https://pokespeare.mattianatali.dev/).
