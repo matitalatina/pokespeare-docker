@@ -2,6 +2,10 @@
 
 Start PokéSpeare with docker compose on your local machine.
 
+## Requirements
+
+- [Docker](https://www.docker.com/).
+
 ## Getting Started
 
 ```bash
@@ -31,3 +35,4 @@ Now you can see it on [http://localhost](http://localhost).
 
 - *Why did you use three repositories instead of only one?* Because the CI/CD pipelines are easier to manage.
 - *I'm lazy, do you have a live website that shows this stuff?* Of course! Just go to [https://pokespeare.mattianatali.dev/](https://pokespeare.mattianatali.dev/).
+- *Why is the first call so slow on your website?* Because the backend is hosted on free [Heroku](https://www.heroku.com/) machine. It takes time to boot up.
